@@ -5,6 +5,7 @@ require_relative 'models/ship.rb'
 module FormsLab
   class App < Sinatra::Base
 
+<<<<<<< HEAD
 
 
     # code other routes/actions here
@@ -13,6 +14,12 @@ module FormsLab
     end
     
     get '/new' do
+=======
+set :views, File.expand_path('../../views/pirates', __FILE__)
+
+    # code other routes/actions here
+    get '/' do
+>>>>>>> c01e7eaba62bb5129332347a0ca275362d247c64
       erb :new
     end
     
